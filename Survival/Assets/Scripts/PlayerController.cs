@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
         originPosY = theCamera.transform.localPosition.y;
         applyCrouchPosY = originPosY;
+        theCamera = FindObjectOfType<Camera>();
     }
 
     void Update()
