@@ -14,13 +14,9 @@ public class HandController : MonoBehaviour
 
     private RaycastHit hitInfo;
 
-
-    // Update is called once per frame
     void Update()
     {
-
         TryAttack();
-
     }
 
     private void TryAttack()
