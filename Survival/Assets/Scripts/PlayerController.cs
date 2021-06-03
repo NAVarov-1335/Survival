@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    // 스피드 조정 변수
     [SerializeField]
     private float walkSpeed;
     [SerializeField]
@@ -139,7 +141,7 @@ public class PlayerController : MonoBehaviour
     private void IsGround()
     {
         isGround = Physics.Raycast(transform.position, Vector3.down, capsuleCollider.bounds.extents.y + 0.1f);
-        theCrosshair.RunningAnimation(!isGround);
+        theCrosshair.JumpingAnimation(!isGround);
     }
 
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Crosshair : MonoBehaviour
 {
+
+
     private const float WALKING_FIRE = 0.08f, STANDING_FIRE = 0.04f, CROUCHING_FIRE = 0.02f, FINESIGHT_FIRE = 0.001f;
 
     [SerializeField]
@@ -22,10 +24,17 @@ public class Crosshair : MonoBehaviour
 
     public void WalkingAnimation(bool _flag)
     {
+        WeaponManager.currentWeaponAnim.SetBool("Walk", _flag);
         animator.SetBool("Walking", _flag);
     }
 
     public void RunningAnimation(bool _flag)
+    {
+        WeaponManager.currentWeaponAnim.SetBool("Run", _flag);
+        animator.SetBool("Running", _flag);
+    }
+
+    public void JumpingAnimation(bool _flag)
     {
         animator.SetBool("Running", _flag);
     }
