@@ -745,6 +745,7 @@ GameObject:
   - component: {fileID: 661071718}
   - component: {fileID: 661071719}
   - component: {fileID: 661071720}
+  - component: {fileID: 661071721}
   m_Layer: 2
   m_Name: Holder
   m_TagString: Untagged
@@ -760,7 +761,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661071715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9867043, y: -0.21109104, z: -0.7198458}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2123727255}
@@ -914,6 +915,22 @@ MonoBehaviour:
   - {fileID: 3514755544687401369}
   theGunController: {fileID: 661071718}
   theHandController: {fileID: 661071717}
+--- !u!114 &661071721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661071715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c26e722f526e5f419cb53969db586b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limitPos: {x: 0.2, y: 0.1, z: 0}
+  fineSightLimitPos: {x: 0.01, y: 0.01, z: 0}
+  smoothSway: {x: 0.05, y: 0.05, z: 0}
+  theGunController: {fileID: 661071718}
 --- !u!1 &692711103
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,15 +6604,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5884dd545b4a909458187d500de21d44, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5884dd545b4a909458187d500de21d44, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5884dd545b4a909458187d500de21d44, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5884dd545b4a909458187d500de21d44, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6926,8 +6943,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724366401}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.06, y: -0.52, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2031250085}
@@ -7155,7 +7172,7 @@ MonoBehaviour:
   carryBulletCount: 60
   retroActionForce: 0.4
   retroActionFineSightForce: 0
-  fineSightOriginPos: {x: -0.58, y: 0.24, z: -0.52}
+  fineSightOriginPos: {x: 0.24, y: 0.72, z: -0.58}
   anim: {fileID: 2031250087}
   muzzleFlash: {fileID: 692711105}
   fire_Sound: {fileID: 8300000, guid: 67491f26525b79543989717ccb24a4fc, type: 3}
@@ -12224,7 +12241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123727254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -0.8, z: 0.4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291151060184924962}
