@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PickaxeController : CloseWeaponController
 {
-
     // 활성화 여부.
     public static bool isActivate = true;
 
@@ -27,6 +26,10 @@ public class PickaxeController : CloseWeaponController
         {
             if (CheckObject())
             {
+                if (hitInfo.transform.tag == "Rock")
+                {
+                    hitInfo.transform.GetComponent<Rock>().Mining();
+                }
                 isSwing = false;
                 Debug.Log(hitInfo.transform.name);
             }
