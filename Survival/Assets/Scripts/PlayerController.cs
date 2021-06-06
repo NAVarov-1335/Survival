@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     // 스피드 조정 변수
     [SerializeField]
     private float walkSpeed;
@@ -80,9 +81,11 @@ public class PlayerController : MonoBehaviour
         TryCrouch();
         Move();
         MoveCheck();
-        CameraRotation();
-        CharacterRotation();
-
+        if (!Inventory.inventoryActivated)
+        {
+            CameraRotation();
+            CharacterRotation();
+        }
     }
 
     // 앉기 시도
@@ -239,7 +242,6 @@ public class PlayerController : MonoBehaviour
     // 좌우 캐릭터 회전
     private void CharacterRotation()
     {
-
         float _yRotation = Input.GetAxisRaw("Mouse X");
         Vector3 _characterRotationY = new Vector3(0f, _yRotation, 0f) * lookSensitivity;
         myRigid.MoveRotation(myRigid.rotation * Quaternion.Euler(_characterRotationY));

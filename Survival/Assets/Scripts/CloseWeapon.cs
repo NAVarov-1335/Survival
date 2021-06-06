@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CloseWeapon : MonoBehaviour
 {
+
     public string closeWeaponName; // 근접 무기 이름.
 
     // 웨폰 유형.
