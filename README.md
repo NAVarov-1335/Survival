@@ -26,3 +26,4 @@ E를 통해 아이템을 획득하고, I키를 사용해 인벤토리 창을 열
 ## 내부파일
 
 ## 사용 Asset
+https://assetstore.unity.com/packages/3d/props/industrial/spaceship-33345
